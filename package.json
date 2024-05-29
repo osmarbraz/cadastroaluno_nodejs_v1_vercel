@@ -1,0 +1,18 @@
+{
+  "name": "cadastroaluno_nodejs_v1_vercel",
+  "version": "1.0.0",
+  "description": "Cadastro Aluno CRUD NodeJS v1 Vercel",
+  "main": ".\\src\\index",
+  "scripts": {
+    "start": "node .\\src\\index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/postgres": "^0.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
