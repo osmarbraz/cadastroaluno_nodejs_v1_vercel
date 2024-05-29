@@ -40,7 +40,7 @@ const alterar = async (request, response) => {
     const alunoId = parseInt(request.params.alunoId);
     const { nome, curso, cpf } = request.body;    
 
-    const { rows } = await sql`UPDATE CLIENTE SET nome = ${nome}, curso = ${curso}, cpf = ${cpf} WHERE alunoid = ${alunoId};`;
+    const { rows } = await sql`UPDATE aluno SET nome = ${nome}, curso = ${curso}, cpf = ${cpf} WHERE alunoid = ${alunoId};`;
     
     response.status(200).json( { message: `Aluno alterado com alunoId: ${alunoId}` });    
 };
